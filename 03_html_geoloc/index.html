@@ -11,10 +11,19 @@
 			geoInfos += "Altitude : "+position.coords.altitude+"<br />";
 			document.getElementById("geolocation").innerHTML = geoInfos;
 		}
+		function mySpeedLocation(position) {
+			var geoInfos = "Position déterminée : <br/>";
+			geoInfos += "Longitude : "+position.coords.longitude+"<br />"; 
+			geoInfos += "Latitude : "+position.coords.latitude+"<br />";
+			geoInfos += "Altitude : "+position.coords.altitude+"<br />";
+			geoInfos += "Vitesse : "+position.coords.speed+"<br />";
+			document.getElementById("geolocation").innerHTML = geoInfos;
+		}
 		
 		if (navigator.geolocation) {
 			//alert('L\API de géolocalisation en HTML5 est disponible');
-			navigator.geolocation.getCurrentPosition(myLocation);
+			//navigator.geolocation.getCurrentPosition(myLocation);
+			navigator.geolocation.watchPosition(mySpeedLocation);
 		} else {
 			alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
 		}
