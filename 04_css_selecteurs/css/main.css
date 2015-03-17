@@ -6,7 +6,7 @@ a {color: #777777;}
 #footer {width: 100%;}
 
 /*CSS descendant*/
-#toc ul li {color: blue;}
+#toc ul li {color: red;}
 /*CSS spécifique*/
 #toc ul li a span.tocnumber {color: red;}
 /*CSS Grouping*/
