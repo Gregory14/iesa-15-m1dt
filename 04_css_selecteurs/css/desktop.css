@@ -1,0 +1,8 @@
+#header {background-color: red; position: relative;}
+#header img {position: absolute; top: 0; right:0; height: 90%; margin: 5px 10px 0 0;}
+#sidebar {background-color: blue; float: left;}
+#content {background-color: green; float: right;}
+#footer {background-color: yellow; clear: both;}
+
+#header, #footer {height: 100px;}
+#sidebar, #content {width: 46%; height: 300px; margin: 1%}

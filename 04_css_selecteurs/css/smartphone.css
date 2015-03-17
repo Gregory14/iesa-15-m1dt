@@ -1,0 +1,6 @@
+div {width: 100%; height: 200px;}
+
+#header {background-color: red;}
+#sidebar {background-color: blue;}
+#content {background-color: green;}
+#footer {background-color: yellow;}
