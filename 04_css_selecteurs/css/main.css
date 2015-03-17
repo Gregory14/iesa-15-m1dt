@@ -7,6 +7,7 @@
 }
 body {width: 100%; background-color: #DDDDDD }
 a {color: #777777; font-style: italic; font-size: 0.5em; letter-spacing: 0.5em;}
+.thumb {background: rgba(50, 100, 100, 0.4);}
 .bandeau {background-color: red; margin : 1%; float: left;width: 42%; padding: 10px 1%;}
 #content {width: 70%; background: url(../img/bigHero6.jpg) no-repeat;}
 #mw-navigation {width: 30%; background-image: url(../img/220px-Dahu_by_Philippe_Semeria.jpg);}
@@ -20,4 +21,4 @@ a {color: #777777; font-style: italic; font-size: 0.5em; letter-spacing: 0.5em;}
 h1, h2, h3 {font-size: 26px; color: yellow; font-family: 'Ubuntu-Italic'}
 h1 {font-variant: small-caps;}
 h2 {text-transform: uppercase; border-bottom: 3px dotted black;}
-h3 {text-align: center; border: 2px solid lime; padding: 0.5em;}
+h3 {text-align: center; border: 2px solid lime; padding: 0.5em; background: rgb(100, 00, 50);}
