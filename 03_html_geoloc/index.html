@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Géolocalisation</title>
 	<script>
-		function myLocation(position) {
+		function displayLocation(position) {
 			var geoInfos = "Position déterminée : <br/>";
 			geoInfos += "Longitude : "+position.coords.longitude+"<br />"; 
 			geoInfos += "Latitude : "+position.coords.latitude+"<br />";
 			geoInfos += "Altitude : "+position.coords.altitude+"<br />";
 			document.getElementById("geolocation").innerHTML = geoInfos;
 		}
-		function mySpeedLocation(position) {
+		function displaySpeedLocation(position) {
 			var geoInfos = "Position déterminée : <br/>";
 			geoInfos += "Longitude : "+position.coords.longitude+"<br />"; 
 			geoInfos += "Latitude : "+position.coords.latitude+"<br />";
@@ -19,11 +19,14 @@
 			geoInfos += "Vitesse : "+position.coords.speed+"<br />";
 			document.getElementById("geolocation").innerHTML = geoInfos;
 		}
+		function displayError(position){
+			alert('Problème réseaux');
+		}
 		
 		if (navigator.geolocation) {
 			//alert('L\API de géolocalisation en HTML5 est disponible');
-			//navigator.geolocation.getCurrentPosition(myLocation);
-			navigator.geolocation.watchPosition(mySpeedLocation);
+			navigator.geolocation.getCurrentPosition(displayLocation,displayError);
+			//navigator.geolocation.watchPosition(displaySpeedLocation);
 		} else {
 			alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
 		}
