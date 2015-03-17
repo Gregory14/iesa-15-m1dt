@@ -13,10 +13,11 @@ a {color: #777777; font-style: italic; font-size: 0.5em}
 #footer {width: 100%;}
 
 /*CSS descendant*/
-#toc ul li {color: red;}
+#toc ul li {color: red; text-indent: 100px;}
 /*CSS spécifique*/
 #toc ul li a span.tocnumber {color: red; font-weight: bold;}
 /*CSS Grouping*/
 h1, h2, h3 {font-size: 26px; color: yellow; font-family: 'Ubuntu-Italic'}
 h1 {font-variant: small-caps;}
 h2 {text-transform: uppercase;}
+h3 {text-align: center;}
