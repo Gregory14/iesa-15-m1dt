@@ -12,6 +12,12 @@
 			geoInfos += "Altitude : "+position.coords.altitude+"<br />";
 			document.getElementById("geolocation").innerHTML = geoInfos;
 			var map = new google.maps.Map(document.getElementById('map'), optionsGmaps);
+			//Marker de position
+			marker = new google.maps.Marker({
+				position: centerPos,
+				map: map,
+				title: "Vous êtes ici"
+			});
 		}
 		function displaySpeedLocation(position) {
 			var geoInfos = "Position déterminée : <br/>";
