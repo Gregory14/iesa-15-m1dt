@@ -5,11 +5,11 @@
 	font-family: 'Ubuntu-Italic';
 	src : url(../font/Ubuntu/Ubuntu-Italic.ttf);
 }
-body {width: 100%;}
+body {width: 100%; background-color: #DDDDDD }
 a {color: #777777; font-style: italic; font-size: 0.5em; letter-spacing: 0.5em;}
 .bandeau {background-color: red; margin : 1%; float: left;width: 42%; padding: 10px 1%;}
-#content {width: 70%;}
-#mw-navigation {width: 30%;}
+#content {width: 70%; background: url(../img/bigHero6.jpg) no-repeat;}
+#mw-navigation {width: 30%; background-image: url(../img/220px-Dahu_by_Philippe_Semeria.jpg);}
 #footer {width: 90%;}
 
 /*CSS descendant*/
