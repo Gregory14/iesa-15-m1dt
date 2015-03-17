@@ -19,8 +19,22 @@
 			geoInfos += "Vitesse : "+position.coords.speed+"<br />";
 			document.getElementById("geolocation").innerHTML = geoInfos;
 		}
-		function displayError(position){
-			alert('Problème réseaux');
+		function displayError(error){
+			var info = "Erreur lors de la géolocalisation : ";
+			switch(error.code) {
+				case error.TIMEOUT:
+					info += "Timeout !";
+				break;
+				case error.PERMISSION_DENIED:
+					info += "Vous n'avez pas donnée la permission.";
+				break;
+				case error.POSITION_UNVAILABLE:
+					info += "La position n'a pu être déterminée.";
+				break;
+				case error.UNKNOWN_ERROR:
+					info += "Erreur inconnue.";
+				break;
+			}
 		}
 		
 		if (navigator.geolocation) {
