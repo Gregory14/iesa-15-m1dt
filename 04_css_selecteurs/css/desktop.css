@@ -1,4 +1,4 @@
-#header {background-color: red; position: relative;}
+#header {background-color: red; position: relative; box-shadow: 5px 5px 8px #000; -moz-box-shadow: 5px 5px 8px #000; -webkit-box-shadow: 5px 5px 8px #000; -o-box-shadow: 5px 5px 8px #000;}
 #header img {position: absolute; top: 0; right:0; height: 90%; margin: 5px 10px 0 0;}
 #sidebar {background-color: blue; float: left;}
 #content {background-color: green; float: right;}
