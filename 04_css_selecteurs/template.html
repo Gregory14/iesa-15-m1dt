@@ -4,17 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Template</title>
 	<style>
-	#header {background-color: red;}
+	#header {background-color: red; position: relative;}
+	#header img {position: absolute; top: 0; right:0; height: 90px; margin: 5px 10px 0 0;}
 	#sidebar {background-color: blue; float: left;}
 	#content {background-color: green; float: right;}
 	#footer {background-color: yellow; clear: both;}
+
 	#header, #footer {height: 100px;}
 	#sidebar, #content {width: 46%; height: 300px; margin: 1%}
 	</style>
 </head>
 <body>
 	<div id="main">
-		<div id="header"><p>Header</p></div>
+		<div id="header"><h1>Header</h1><img src="img/220px-Dahu_by_Philippe_Semeria.jpg" alt="Logo Dahu"></div>
 		<div id="sidebar"><p>Sidebar</p></div>
 		<div id="content"><p>Content</p></div>
 		<div id="footer"><p>Footer</p></div>
