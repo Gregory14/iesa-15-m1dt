@@ -1,0 +1,13 @@
+body {width: 100%;}
+a {color: #777777;}
+.bandeau {background-color: red; margin : 1%; float: left;width: 46%;}
+#content {width: 70%;}
+#navigation {width: 30%;}
+#footer {width: 100%;}
+
+/*CSS descendant*/
+#toc ul li {color: blue;}
+/*CSS spécifique*/
+#toc ul li a span.tocnumber {color: red;}
+/*CSS Grouping*/
+h1, h2, h3 {font-size: 26px; color: yellow;}
