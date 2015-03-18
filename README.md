@@ -12,6 +12,12 @@
 ** ++a = Incrémente puis affiche le nombre
 * Le ternaire
 ** var nomVariable = (condition) ? ValeurAssignéSiVrai : ValeurAssignéSiFaux;
+* Console
+** console.log
+** console.debug
+** console.info
+** console.warn
+** console.error
 
 ## Info 
 * Dotted : s'affiche en carré sur Chrome uniquement
