@@ -10,3 +10,5 @@
 
 ## Info 
 * Dotted : s'affiche en carré sur Chrome uniquement
+* GIT : checkout -> annuler les dernières modifications
+* Sublime text : raccourcis cmd+shft+/ pour les commentaires
