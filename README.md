@@ -7,6 +7,11 @@
 ## Javascript
 * Google map : pour afficher la map mettre des dimensions dans la DIV
 * Fonction : function nomMéthode(arguments)
+* Attention à l'ordre de l'incrementation.
+** a++ = Affiche le nombre puis incrémente
+** ++a = Incrémente puis affiche le nombre
+* Le ternaire
+** var nomVariable = (condition) ? ValeurAssignéSiVrai : ValeurAssignéSiFaux;
 
 ## Info 
 * Dotted : s'affiche en carré sur Chrome uniquement

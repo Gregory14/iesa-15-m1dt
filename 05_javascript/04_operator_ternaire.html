@@ -4,16 +4,32 @@
 	<meta charset="UTF-8">
 	<title>01 Javascript Hello World</title>
 	<script>
-		var a = 5;
-		var b = "5";
-		// Ca fonctionnera
-		if (a == b){
-			alert("Que passa");
+		var playerOne = 500;;
+		var playerTwo = 600;;
+		var hightScore;;
+		// Opérateur ternaire
+		var hightScore = (playerOne > playerTwo) ? playerOne : playerTwo;;
+		// Traduction du Ternaire
+		if (playerOne > playerTwo){
+			var hightScore = playerOne;;
 		}
-		// Ne fonctionnera pas
-		if (a === b){
-			alert ("Second if");
+		else{
+			var hightScore = playerTwo;;
 		}
+
+
+
+		// Exemple slide
+		var statut = (age>18) ? "majeur" : "mineur";;
+		var statut;;
+		var age;;
+		if (age > 18) {
+			statut = "majeur";;
+		}
+		else{
+			statut= "mineur";;
+		}
+
 	</script>
 </head>
 <body>
