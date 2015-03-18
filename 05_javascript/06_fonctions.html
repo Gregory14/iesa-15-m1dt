@@ -4,10 +4,27 @@
 	<meta charset="UTF-8">
 	<title>01 Javascript Hello World</title>
 	<script>
+	
 	function displayMessage (){
 		console.log("Coucou !");;
 	}
-	displayMessage();;
+
+	function diplayBeNice (){
+		console.log("Sois polis dit : ");;
+	}
+
+	function displayBy (){
+		diplayBeNice();;
+		displayMessage();;
+		console.log("Au revoir");;
+	}
+
+	displayBy();;
+
+	function displayTotal (price, nombre){
+		console.log('Le total est de :'+' '+price * nombre);;
+	}
+	displayTotal (10,2);;
 
 	</script>
 </head>
