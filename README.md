@@ -18,6 +18,10 @@
 ** console.info
 ** console.warn
 ** console.error
+* Boucle
+** Break : intérrompt la boucle
+** Continue : permet de continuer ailleurs. 
+** /!\ Largement à éviter !
 
 ## Info 
 * Dotted : s'affiche en carré sur Chrome uniquement
