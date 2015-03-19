@@ -5,6 +5,16 @@
 	<title>Document</title>
 </head>
 <body>
-
+<?php
+	$articles array(
+	"title",
+	"link",
+	"description",
+	"language",
+	"copyright",
+	"pubDate",
+	"item",
+	);
+?>
 </body>
 </html>
