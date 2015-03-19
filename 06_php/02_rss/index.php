@@ -45,6 +45,7 @@ var_dump($articles3);
 var_dump($articles4);
 var_dump($articles5);
 
+// Afficher la news sous forme de liste
 function buildHtmlNews($articles) {
 		return "<ul>".
 			"<li>".$articles['title']."</li>".
@@ -52,10 +53,32 @@ function buildHtmlNews($articles) {
 			"<li>".$articles['description']."</li>".
 			"<li>".$articles['pubDate']."</li>".
 		"</ul>";
-
 }
 
 echo buildHtmlNews($articles);
+
+// Affichage de la news sous forme de tableau
+function buildTableNews($articles2) {
+		return "<table>".
+			"<tr><td>Titre : </td><td>".$articles2['title']."</td></tr>".
+			"<tr><td>Lien : </td><td>".$articles2['link']."</td></tr>".
+			"<tr><td>Description : </td><td>".$articles2['description']."</td></tr>".
+			"<tr><td>Publié le : </td><td>".$articles2['pubDate']."</td></tr>".
+		"</table>";
+}
+
+echo buildTableNews($articles2);
+
+// Utilisation de foreach
+function buildRow($news) {
+	$row;
+	foreach ($news as $key => $value) {
+		$row .= "<tr><td>".$key." : </td><td>".$value."</td></tr>";
+	}
+	return $row;
+}
+
+echo "<table>".buildRow($articles4)."</table>";
 
 ?>
 
