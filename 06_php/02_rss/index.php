@@ -70,17 +70,54 @@ function buildTableNews($articles2) {
 echo buildTableNews($articles2);
 
 // Utilisation de foreach
-function buildRow($news) {
+/*function buildRow($news, $wantedProperties) {
 	$row;
 	foreach ($news as $key => $value) {
 		$row .= "<tr><td>".$key." : </td><td>".$value."</td></tr>";
 	}
 	return $row;
 }
-
 echo "<table>".buildRow($articles4)."</table>";
+*/
+
+$wantedProperties = array("title", "pubDate");
+
+function buildProperties ($news, $properties){
+	foreach ($properties as $valueProp) {
+		$property .= "<tr><td>".$news[$valueProp]."</td></tr>";
+	}
+	return $property;
+}
+
+echo "<table>".buildProperties($articles2, $wantedProperties)."</table>";
 
 ?>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
