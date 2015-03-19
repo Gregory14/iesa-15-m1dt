@@ -34,7 +34,21 @@
 	echo PI. "<br/>";
 	echo pi. "<br/>";
 
+	const NOMCONSTANTE = "Valeur de la constante";
 
+var_dump($b);
+
+// Les tableaux
+$monTableau = array();
+var_dump($monTableau);
+
+$course = array ("fruit" => "fraise", "legume" => "tomate", "cereales" => "chocopops");
+var_dump($course);
+
+$course ["Viande"] : "poulet"; 
+var_dump($course);
+
+$course = array("kiwi", "poulet"); 
 
 ?>	
 </body>

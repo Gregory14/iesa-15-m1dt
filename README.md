@@ -36,6 +36,7 @@
   * Scalaire : boolene / integer / float (i.e. double) / string
   * Composés : array / objet 
   * Spéciaux : ressource / NULL
+* Connaitre les infos d'une variable : var_dump / echo gettype($variable)
 
 ## Info 
 * Dotted : s'affiche en carré sur Chrome uniquement
