@@ -29,6 +29,12 @@
 	echo ${$b} . "<br/>";
 	echo $bonjour . "<br/>";
 
+	// Definir une constante
+	define("PI", 3.14);
+	echo PI;
+
+	
+
 ?>	
 </body>
 </html>
