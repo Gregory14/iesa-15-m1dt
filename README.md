@@ -30,6 +30,7 @@
 
 ## PHP
 * global : va chercher les variables en dehors d'une function
+* $$a : Le double $$ est une variable de variable (variable dynamique)
 
 ## Info 
 * Dotted : s'affiche en carré sur Chrome uniquement

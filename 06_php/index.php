@@ -19,6 +19,16 @@
 	}
 
 	test();
+
+	$b = "Bonjour";
+	$$b = "Monde"; // $Bonjour = "Monde"
+
+	echo $b . "<br/>";
+
+	echo $$b . "<br/>";
+	echo ${$b} . "<br/>";
+	echo $bonjour . "<br/>";
+
 ?>	
 </body>
 </html>
