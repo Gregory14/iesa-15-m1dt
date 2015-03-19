@@ -44,6 +44,19 @@ var_dump($articles2);
 var_dump($articles3);
 var_dump($articles4);
 var_dump($articles5);
+
+function buildHtmlNews($articles) {
+		return "<ul>".
+			"<li>".$articles['title']."</li>".
+			"<li>".$articles['link']."</li>".
+			"<li>".$articles['description']."</li>".
+			"<li>".$articles['pubDate']."</li>".
+		"</ul>";
+
+}
+
+echo buildHtmlNews($articles);
+
 ?>
 
 </body>
