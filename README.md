@@ -1,8 +1,10 @@
 # iesa-15-m1dt
 
 ## Sites utiles
-* http://daringfireball.net/projects/markdown/syntax
-* https://pragprog.com/ : The pragmatic programmer
+* http://daringfireball.net/projects/markdown/syntax;
+* https://pragprog.com/ : The pragmatic programmer;
+* http://jenkins-ci.org/ : Mise en place intégration continue;
+* http://www.seleniumhq.org/ : Test utilisateur automatisé;
 
 ## Javascript
 * Google map : pour afficher la map mettre des dimensions dans la DIV
