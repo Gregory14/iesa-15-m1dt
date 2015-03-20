@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test unitaire</title>
+	<link rel="stylesheet" href="qunit.css">
+	<script type="text/javascript" src="qunit.js"></script>
+</head>
+<body>
+	<script>
+		QUnit.test("Egalité parfaite",
+			function(assert) {
+				assert.equal(1,2,"1 expected");
+			});
+
+		QUnit.test("L'égalité est fausse",
+			function(assert) {
+				assert.equal(2,2,"1 expected");
+			});
+	</script>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+</body>
+</html>
