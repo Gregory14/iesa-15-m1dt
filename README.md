@@ -44,6 +44,14 @@
 ## Refactoring
 * Modification du focntionnement et non du résultat
 
+##POO
+* Le nom de l'objet porte une majuscule. (ex: function Player(){}). On appel çà la classe. "unique"
+* Instance de la classe var toto = new Player();
+* instanceof : identifier l'instance de la classe XXX;
+* L'utilisation de "this" méthode PUBLIC;
+* Sans "this" méthode PRIVATE;
+
+
 
 ## PHP
 * global : va chercher les variables en dehors d'une function
