@@ -41,6 +41,9 @@
   * On ecrit le test
   * Puis on code
 
+## Refactoring
+* Modification du focntionnement et non du résultat
+
 
 ## PHP
 * global : va chercher les variables en dehors d'une function
