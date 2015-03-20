@@ -31,6 +31,9 @@
 * Les dates
   * .getTime() permet de comparer 2 dates;
 
+## Tests unitaires
+* Attention à l'ordre des arguments (Valeur testé, Valeur attendu, Message d'erreur);
+
 
 ## PHP
 * global : va chercher les variables en dehors d'une function

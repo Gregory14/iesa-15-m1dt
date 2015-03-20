@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="qunit.css" />
+	<script type="text/javascript" src="qunit.js"></script>
+</head>
+<body>
+	<script>
+
+	QUnit.test("That addition succed",
+			function(asset) {
+				asset.equal(add (10,20),40,"L'addiction est fausse");
+			});
+
+	QUnit.test("That Soustraction succed",
+			function(asset) {
+				asset.equal(minus (5,4),1,"La soustraction est fausse");
+			});
+
+	QUnit.test("That Multiplication succed",
+			function(asset) {
+				asset.equal(1, minus (5,9),"La soustraction est fausse");
+			});
+
+	QUnit.test("That Division succed",
+			function(asset) {
+				asset.equal(devise (6,3),2,"La soustraction est fausse");
+			});
+
+	function displayMessage (){
+		console.log("Coucou !");;
+	}
+
+	function diplayBeNice (){
+		console.log("Sois polis dit : ");;
+	}
+
+	function displayBy (){
+		diplayBeNice();;
+		displayMessage();;
+		console.log("Au revoir");;
+	}
+
+	displayBy();;
+
+	function multiply (nbr1, nbr2){
+		return(nbr1 * nbr2);;
+	}
+
+	function add (nbr1, nbr2){
+		return(nbr1 + nbr2);;
+	}
+
+	function minus (nbr1, nbr2){
+		return(nbr1 - nbr2);;
+	}
+
+	function devise (nbr1, nbr2){
+		return(nbr1 / nbr2);;
+	}
+	
+	multiply (10,2);;
+	add (10,20);;
+	minus (5,4);;
+	devise (10,2);;
+
+	console.log(multiply (10,2));;
+	console.log(minus (5,4));;
+	console.log(devise (10,2));;
+	console.log(add (20));;
+	console.log(add (10,20));;
+	console.log(add (10,20,30));;
+	</script>
+
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+</body>
+</html>
