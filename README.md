@@ -27,6 +27,10 @@
   * values.reverse(); -> Inverse les tableaux
   * values.join("_"); -> ajoute élément entre les valeurs
   * values.sort();
+  * Penser a initialiser le tableau dans la variable;
+* Les dates
+  * .getTime() permet de comparer 2 dates;
+
 
 ## PHP
 * global : va chercher les variables en dehors d'une function

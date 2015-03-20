@@ -6,7 +6,7 @@
 	<script>
 var date1 = new Date();
 var date2 = new Date(1998, 06, 12);
-var date3 = new Date(1991, 08, 16, 13, 30, 30);
+var date3 = new Date(2015, 08, 16, 13, 30, 30);
 
 console.log(date1);
 console.log(date2);
@@ -21,6 +21,25 @@ today.setMonth(14);
 
 console.log(today);
 
+if (date1.getFullYear() === date3.getFullYear()){
+	console.log("a l'heure");
+}
+
+/*
+AA MM JJ =
+h m s ≠
+Comparer en ignorant les 3 derniers paramètres
+*/
+
+ var date10 = new Date(2013, 3, 4, 12, 40, 30);
+ var date20 = new Date(2013, 3, 4, 7, 03, 17);
+
+ var date10String = date10.getFullYear()+date10.getMonth()+date10.getDay();
+ var date20String = date20.getFullYear()+date20.getMonth()+date20.getDay();
+
+if (date20String == date20String){
+	console.log('C\'est la même heure');
+}
 
 	</script>
 </head>
