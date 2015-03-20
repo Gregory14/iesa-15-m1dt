@@ -20,6 +20,11 @@
 				asset.equal(add (10,20),30,"10+20=30");
 			});
 
+	QUnit.test("That addition succed",
+			function(asset) {
+				asset.ok(isNaN(add (10)),"10+20=30");
+			});
+
 
 	function add (nbr1, nbr2){
 		return(nbr1 + nbr2);;
