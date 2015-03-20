@@ -1,7 +1,3 @@
 <?php 
-//var_dump($_POST);
-
-echo 'Bonjour '.$_POST['name'].' '.$_POST['firstName'].' !';
+header('Location: index.php?name='.$_POST['name'].'&firstName='.$_POST['firstName']);
 ?>
-
-<a href="index.php">Retour à la maison</a>

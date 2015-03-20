@@ -11,5 +11,10 @@
 		<label for="firstName">Prénom : </label><input id="firstName" name="firstName" type="text"><br/>
 		<input type="submit">
 	</form>
+	<?php
+	if (isset($_GET['name']) && isset($_GET['firstName'])) {
+	 	echo 'Bonjour '.$_GET['name'].' '.$_GET['firstName'].' !';
+	 } 
+	?>
 </body>
 </html>
