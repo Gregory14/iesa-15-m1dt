@@ -91,6 +91,24 @@ function buildProperties ($news, $properties){
 
 echo "<table>".buildProperties($articles2, $wantedProperties)."</table>";
 
+
+// Récupération par XML
+$xmlConvertString = <<<XML
+<?xml version='1.0'?> 
+<document>
+	<title>Foot - JAP - Vahid Halilhodzic appelle 31 joueurs pour ses premiers matches avec le Japon</title>
+	<link>http://www.lequipe.fr/Football/Actualites/Vahid-halilhodzic-appelle-31-joueurs-pour-ses-premiers-matches-avec-le-japon/544304#xtor=RSS-1</link>
+	<description>NommÃ© officiellement sÃ©lectionneur du Japon le 12 mars, Vahid... </description>
+	<pubDate>Thu, 19  Mar 2015 10:40:00 +0100</pubDate>
+</document>
+XML;
+$xml = simplexml_load_string($xmlConvertString);
+// var_dump($xml->title);
+
+foreach ($wantedProperties as $property) {
+	echo $xml->$property; 
+}
+
 ?>
 
 </body>
