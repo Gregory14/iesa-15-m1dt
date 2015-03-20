@@ -36,6 +36,11 @@
 ## Tests unitaires
 * Attention à l'ordre des arguments (Valeur testé, Valeur attendu, Message d'erreur);
 
+## TDD
+* Test Driven Developpement
+  * On ecrit le test
+  * Puis on code
+
 
 ## PHP
 * global : va chercher les variables en dehors d'une function

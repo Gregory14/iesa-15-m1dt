@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="refresh" content="10" />
+	<link rel="stylesheet" href="qunit.css" />
+	<script type="text/javascript" src="qunit.js"></script>
+</head>
+<body>
+	<script>
+
+	QUnit.test("That addition succed",
+			function(asset) {
+				asset.equal(30,30,"10+20=30");
+			});
+
+	QUnit.test("That addition succed",
+			function(asset) {
+				asset.equal(add (10,20),30,"10+20=30");
+			});
+
+
+	function add (nbr1, nbr2){
+		return(nbr1 + nbr2);;
+	}
+
+	</script>
+
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+</body>
+</html>
